@@ -21,13 +21,12 @@ pip install pytest-xdist
 # Running test
 Docker build . -t pytest
 
-Docker images - to get <IMAGE ID>
+Docker images - to get Image_ID
 
-The working directory should be set up on local machine as 
+The working directory should be set up on local machine as ~/pytest
 
-~/pytest
+docker run -v ~/pytest:/etc/workdir  -t Image_ID
 
-docker run -v ~/pytest:/etc/workdir  -t <IMAGE ID>
-
+# Report
 open ~/pytest/report.html
 
