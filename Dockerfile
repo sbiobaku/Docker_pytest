@@ -17,5 +17,5 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 # Docker run -v <folder with test cases:/etc/workdir -r pytest-html
-ENTRYPOINT pytest --html=report.html
+ENTRYPOINT pytest --html= ./result/report.html
 
