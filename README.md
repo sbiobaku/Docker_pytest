@@ -1,32 +1,12 @@
 # Create a Docker Pytest Container
 
-https://docs.pytest.org/en/7.2.x/
+Docker build . -t saifb/pytest
 
-https://docs.qameta.io/allure/
+## Running test
 
-pip install allure-pytest
+sh runPytest.sh pytests
 
-https://pypi.org/project/pytest-html/
+## Report
 
-pip install pytest-html
-
-https://pypi.org/project/pytest-excel/
-
-pip install pytest-excel
-
-https://www.tutorialspoint.com/pytest/pytest_run_tests_in_parallel.htm
-
-pip install pytest-xdist
-
-# Running test
-Docker build . -t pytest
-
-Docker images - to get Image_ID
-
-The working directory should be set up on local machine as ~/pytest
-
-docker run -v ~/pytest:/etc/workdir  -t Image_ID
-
-# Report
-open ~/pytest/report.html
+open ~/results/report.html
 
